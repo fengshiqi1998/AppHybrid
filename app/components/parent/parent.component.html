@@ -1,0 +1,5 @@
+<!-- 输入框 -->
+<!-- <app-child (data)="getValue($event)"></app-child> -->
+<app-child (data)='getValue($event)'></app-child>
+<!-- 列表 -->
+<app-childlist [arry]="arr" [counter]="counter" (delIndex)="del($event)" (chIndex)="change($event)"></app-childlist>
