@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#contents{
+	white-space:nowrap;/*文本不换行*/
+	margin: 100px auto;
+	width: 1250px;
+	height: 397px;
+	background-color: #ffe;
+	border:0.5px solid #000;
+	overflow: hidden;
+}
+#imgs{
+	position: relative;
+	left: 0;
+}
+ul{
+	position: absolute;
+	top: 470px;
+	left: 40%;
+	list-style: none;
+}
+li{
+	margin-left: 10px;
+	border-radius: 20px;
+	height: 20px;
+	width: 20px;
+	float: left;
+	cursor: pointer;
+}
+#left,#right{
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    top:250px;
+	opacity: 0.6;
+    position: absolute;
+    cursor: pointer;
+}
+
+#left{
+	left:2%;
+	border-left: 30px solid transparent;
+    border-right: 30px solid #fff;
+}
+#right{
+	left:93.5%;
+	border-left: 30px solid #fff;
+    border-right: 30px solid transparent;
+}
