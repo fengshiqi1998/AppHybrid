@@ -1,0 +1,24 @@
+<div class="container">
+    <ul>
+      <li *ngFor="let course of courses;" class="team-card">
+        <a [routerLink]="['/coursedetail',course.id]">
+            <img src="{{course.images}}" alt="">
+            <div class="name">
+              <h4>{{course.courseName}}</h4>
+            </div>
+            <div class="footer">
+              <div class="team-card-icon" style="margin-left:10px;">
+                <span class="glyphicon glyphicon-list"></span>&nbsp;{{course.task}}
+              </div>
+              <div class="team-card-icon" style="margin-left:10px;">
+                <span class="glyphicon glyphicon-user"></span>&nbsp;{{course.person}}
+              </div>
+              <div class="team-card-icon" style="margin-left:50px;">
+                <button class="glyphicon glyphicon-plus">&nbsp;申请</button>
+              </div>
+            </div>
+        </a>
+      </li>
+    </ul>
+</div>
+  

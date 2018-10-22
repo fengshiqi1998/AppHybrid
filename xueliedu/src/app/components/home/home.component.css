@@ -1,0 +1,56 @@
+.container{
+    background-image: url(/imgs/regist-bg.png);
+    width: 1200px;
+    margin:0 auto;
+}
+#left{
+    float: left;
+    margin-top: 50px;
+}
+#right{
+    float: left;
+    margin: 50px 100px;
+    background-color: #fff;
+    box-shadow: darkgrey 10px 10px 30px 10px;
+    width: 320px;
+    height: 500px;
+    border-radius: 5px;
+}
+#email,#name,#psw{
+    margin: 10px;
+}
+#email{
+    margin-top: 20px;
+}
+p{
+    margin: 10px;
+}
+input{
+    width: 280px;
+    height: 30px;
+}
+#sel p{
+    /* display: block; */
+    float: left;
+}
+#sel input{
+    margin-top: 12px;
+    margin-left: 20px;
+    width: 16px;
+    height: 16px;
+}
+#yzm input{
+    width: 160px;
+    height: 40px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+#yzm img{
+    margin-left: 30px;
+    height: 30px;
+}
+button{
+    margin: 30px 10px;
+    width: 280px;
+    height: 50px;
+}

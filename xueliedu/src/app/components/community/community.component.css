@@ -1,0 +1,129 @@
+section{
+    padding-bottom: 30px;
+    height: 100%;
+    min-width: 300px;
+}
+a{
+    color: #9e9e9e;
+    text-decoration: none;
+}
+.container{
+    max-width: 1020px;
+}
+.community{
+    padding: 25px 10px 10px;
+}
+.row{
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.ask-list{
+    width: 690px;
+    float: left;
+}
+.list-condensed{
+    padding: 0;
+}
+.ask-list .item{
+    border-bottom: none;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    cursor: pointer;
+}
+.ask-list .item-img{
+    width: 40px;
+    float: left;
+    margin-right: 10px;
+    /* position: relative; */
+}
+.ask-list .base-img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+}
+.ask-list .item-text{
+    margin-left: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.ask-list .media{
+    max-width: 100%;
+    margin: 5px 0;
+}
+.ask-list .article-banner{
+    position: absolute;
+}
+.ask-list .media-object{
+    width: 130px!important;
+    height: 90px;
+    padding: 3px;
+    border: 1px solid #EEE;
+}
+.ask-list .article-body{
+    margin-left: 140px;
+}
+.ask-list .article-title{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.ask-list .article-excerpt{
+    margin-top: 15px;
+    height: 46px;
+    line-height: 23px;
+    overflow: hidden;
+    color: #666;
+}
+.ask-list .item-footer{
+    padding-top: 15px;
+}
+.ask-list .item-footer span{
+    color: #9e9e9e!important;
+    padding:0px 6px;
+}
+.ask-list .item-footer .pull-right{
+    float: right!important;
+}
+.ask-list .item-footer .read-count{
+    border-right: 1px solid #e5e5e5;
+    padding: 0 3px 0 6px;
+}
+.ask-list .card-pager{
+    padding-left: 5px;
+    clear: both;
+}
+.community .right{
+    width: 250px;
+    padding-top: 5px;
+    padding-left: 25px;
+    float: right;
+}
+.right .ask-hot{
+    width: 210px;
+    float: right;
+}
+.riht .ask-hot .title{
+    margin-top: 0;
+}
+.ask-hot .item{
+    padding: 5px;
+    border-bottom: none;
+}
+footer{
+    margin: 0 auto;
+}
+.argo-footer{
+    width: 100%;
+    bottom: 0;
+    color: #a5a6a9;
+}
+.argo-footer .container{
+    padding: 20px;
+    text-align: center;
+}

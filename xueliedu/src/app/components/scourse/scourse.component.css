@@ -1,0 +1,53 @@
+.container{
+    width: 1200px;
+    margin:0 auto;
+}
+.container ul{
+    list-style: none;
+}
+.container li{
+    float: left;
+    margin: 15px;
+    width: 231px;
+    height: 244px;
+    border: 1px solid #cab7b7;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.container li:hover{
+    border: 1.1px solid #a59494;
+}
+.name{
+    height:60px;
+}
+.team-card a{
+    text-decoration: none;
+    color: #000;
+}
+.team-card h4{
+    text-align: center;
+    margin-top: 15px;
+}
+.footer{
+    position: relative;
+    bottom: 5px;
+    color: #7c7570;
+}
+.team-card-icon{
+    float: left;
+}
+.team-card-icon:hover{
+    opacity: 0.8;
+}
+button{
+    color:#fff;
+    border:1px solid #e96914;
+    background-color:#e96914;
+    border-radius: 3px;
+    width: 70px;
+    height: 30px;
+    line-height: 20px;
+    margin-bottom:20px;
+}
+

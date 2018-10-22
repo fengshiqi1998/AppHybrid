@@ -1,0 +1,91 @@
+<section>
+  <div class="container">
+      <div class="community row">
+          <div class="ask-list">
+              <div class="list list-condensed">
+                  <ul>
+                      <li *ngFor="let community of community" class="item readmore">
+                          <div class="item-img">
+                              <img src="imgs/m.png" class="base-img" >
+                          </div>
+                          <div class="item-text">
+                              <div class="item-content">
+                                  <div class="media">
+                                      <div class="article-banner">
+                                          <a href="#">
+                                              <img class="media-object" src="{{community.images}}" alt="">
+                                          </a>
+                                      </div>
+                                      <div class="article-body">
+                                          <a href="#">
+                                              <div class="article-title">
+                                                  &nbsp;{{community.communityName}}
+                                              </div>
+                                          </a>
+                                          <div class="article-excerpt">
+                                              {{community.content}}
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="item-footer">
+                                  <span class="item-author">{{community.Publisher}}</span>
+                                  <span class="item-created-time">{{community.time}}</span>
+                                  <div class="item-action pull-right">
+                                      <span class="read-count">阅读{{community.readcount}}</span>    
+                                      <span class="comment-count">评论{{community.commentcount}}</span>
+                                  </div>
+
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+              <footer class="card-pager">
+                  <nav aria-label="Page navigation">
+                      <ul class="pagination pageposition">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+              </footer>
+          </div>
+          <div class="right">
+              <div class="ask-hot">
+                  <h4 class="title">热门话题</h4>
+                  <ul>
+                      <li class="item" *ngFor="let conversation of conversation">
+                          <span><a href="#">{{conversation.content}}</a></span>
+                          <span class="pull-right">
+                              {{conversation.Number}}
+                          </span>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  <footer class="argo-footer">
+      <div class="container">
+        <div>
+          <span class="text">2016级软件工程H5方向-冯世祺</span>
+        </div>
+      </div>
+    </footer>
+</section>
+

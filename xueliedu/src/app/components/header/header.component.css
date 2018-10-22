@@ -1,0 +1,54 @@
+div{
+    height: 60px;
+    background-color:#f7f7f7;
+
+}
+img{
+    float: left;
+    margin-top: 5px;
+    margin-left: 10%;
+    line-height: 50px;
+}
+.nav{
+    width: 1200px;
+    margin-left: 35%;
+    line-height: 37px;
+    list-style: none;
+}
+.nav li{
+    float: left;
+}
+.ho{
+    width: 100px;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    height: 60px;
+    line-height: 59px;
+}
+.nav a{
+    width: 100px;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+    height: 58px;
+    border-top:2px solid #f7f7f7;
+}
+.nav a:hover {
+    background-color: #e7e7e7;
+    border-top: 2px solid #ff6e3d;
+}
+/* .nav a:visited {
+    background-color: #e7e7e7;
+    border-top: 2px solid #ff6e3d;
+} */
+.search{
+    margin: 10px;
+}
+input{
+    height: 40px;
+}
+button{
+    width: 40px;
+    height: 40px;
+}

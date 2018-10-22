@@ -1,0 +1,110 @@
+<section>
+  <div class="pagehead teamhead">
+    <div class="container teamhead-details-container">
+      <h1 class="public">
+        <div class="public-main">
+          <span class="group">
+            <i class="glyphicon glyphicon-book"></i>
+            <p class="name">同步课/{{course?.courseName}}</p>
+          </span>
+          <button class="btn btn-warning btn-xs">
+            <i class="glyphicon glyphicon-plus"></i>
+            申请加入
+          </button>
+        </div>
+      </h1>
+      <nav class="nav nav-tabs">
+        <li>
+          <a href="#">
+            <span class="intro">
+              <i class="glyphicon glyphicon-info-sign"></i>
+              简介
+            </span>
+          </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="intro">
+                  <i class="glyphicon glyphicon-heart-empty"></i>
+                  互动
+                </span>
+              </a>
+        </li>
+        <li class="active">
+            <a href="#">
+                <span class="intro">
+                  <i class="glyphicon glyphicon-tasks"></i>
+                  任务<span class="counter">{{course?.task}}</span>
+                </span>
+              </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="intro">
+                  <i class="glyphicon glyphicon-user"></i>
+                  成员<span class="counter">{{course?.person}}</span>
+                </span>
+              </a>
+        </li>
+      </nav>
+    </div>
+  </div>
+  <div class="container team-base-main">
+    <div class="team_content">
+      <div class="team-navbar-menu-wrap">
+        <button class="btn btn-danger">全部任务</button>
+      </div>
+      <div class="task_list_wrap">
+        <ul class="task-list-item-wrap">
+          <li *ngFor="let tasks of tasks" class="task-list-item">
+            <div >
+              <div class="main-part">
+                <h2 class="task-title">{{tasks.taskName}}</h2>
+                <a href="#" class="create-info">
+                  <img src="http://usercontent.edu2act.cn/media/userheader/17-09-12/DktTc6ww3u396hJYsG4dMP.jpg?imageView2/1/w/256/h/256" >
+                  <span style='margin-left: 10px'>{{tasks.author}}</span>
+                </a>
+                <span class="create-time">发布于{{tasks.time}}</span>
+                <span class="finish-state">
+                  <span class="wait">
+                     <i class="glyphicon glyphicon-time"></i>
+                     {{tasks.WaitCount}}
+                  </span>
+                  <span>
+                    <i class="glyphicon glyphicon-record"></i>
+                    {{tasks.UnfinishedCount}}
+                  </span>
+                  <span>
+                    <i class="glyphicon glyphicon-ok-circle"></i>
+                    {{tasks.AcceptedCount}}
+                  </span>
+                </span>
+              </div>
+              <div class="addons-part">
+                <div class="task-score-wrap">
+                  <span class="task-total-score">
+                    {{tasks.Fraction}}
+                    <small style='font-size:12px'>分</small>
+                  </span>
+                  <div class="date-state">
+                    <span class="label laber-outline label-warning">
+                      <i class="glyphicon glyphicon-lock"></i>
+                      已截止
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="argo-footer">
+  <div class="container">
+    <div>
+      <span class="text">2016级软件工程H5方向-冯世祺</span>
+    </div>
+  </div>
+</footer>
