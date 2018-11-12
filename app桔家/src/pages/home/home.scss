@@ -1,0 +1,26 @@
+page-home {
+    .navlist{
+        padding-left: 0px;
+        margin: 0;
+        display: flex;
+        justify-content: row;
+        line-height: 44px;
+        .active{
+            border-bottom: 2px solid #ffdb2c;
+        }
+            
+        li{
+            width: 25%;
+            text-align: center;
+            height: 44px;
+        }
+    }
+    
+    
+    ion-navbar {
+        ion-title img {
+            margin-top: 10px;
+            transform: scale(0.5,0.5) ;
+        }
+    }
+}
