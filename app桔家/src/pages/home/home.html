@@ -1,6 +1,11 @@
-<ion-header>
-  <ion-navbar color='yel'>
-    <button ion-button icon-only menuToggle>
+<ion-menu [content]="mycontent" type="overlay">
+    <ion-list>
+      <ion-item menuClose detail-none>Close Menu</ion-item>
+    </ion-list>
+</ion-menu>
+<ion-header  text-center no-border>
+  <ion-navbar color='yel' #mycontent>
+    <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
@@ -14,14 +19,134 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ul class="navlist">
-    <li class="active">推荐</li>
-    <li>家居</li>
-    <li>餐厨</li>
-    <li>床上用品</li>
-  </ul>
+<ion-content>  
+  <!-- <nav>
+    <ul [ngSwitch]="id" class="navlist">
+      <li [class.first]="flag1" (click)="change(1)">推荐</li>
+      <li (click)="change(2)">家居</li>
+      <li>餐厨</li>
+      <li>床上用品</li>
+    </ul>
+  </nav> -->
   
-  <recommendation></recommendation>
+  <ul class="navlist">
+    <li *ngFor="let item of arr;let idx = index;" (click)="isClick(idx)" [class.first]="isActive==idx">{{item}}</li>
+  </ul>
+
+  <div [ngSwitch]="isActive" class="compon">
+    <div *ngSwitchCase="0">
+      <ion-slides pager="true" autoplay="1000" loop="true" class="sli">
+        <ion-slide>
+          <img src="../../assets/imgs/home/bg.png" alt="banner">
+        </ion-slide>
+        <ion-slide>
+          <img src="../../assets/imgs/home/bg.png" alt="banner">
+        </ion-slide>
+        <ion-slide>
+          <img src="../../assets/imgs/home/bg.png" alt="banner">
+        </ion-slide>
+      </ion-slides>
+  
+      <div class="subtitle">
+        <h4 text-center>热|门|推|荐</h4>
+        <p text-center>RECOMMENDATION</p>
+      </div>
+  
+      <ion-grid class="goods gird">
+        <ion-row>
+          <ion-col col-6>
+            <img src="../../assets/imgs/home/list-bg-1.png" alt="1">
+            <p>北欧原木色置物架</p>
+            <span><img src="../../assets/imgs/star.png" alt="star"></span>
+          </ion-col>
+          <ion-col col-6>
+            <img src="../../assets/imgs/home/list-bg-2.png" alt="2">
+            <p>简约黑檀木茶几</p>
+            <span><img src="../../assets/imgs/star.png" alt="star"></span>
+          </ion-col>
+          <ion-col col-6>
+            <img src="../../assets/imgs/home/list-bg-3.png" alt="3">
+            <p>北欧白橡木书架</p>
+            <span><img src="../../assets/imgs/star.png" alt="star"></span>
+          </ion-col>
+          <ion-col col-6>
+            <img src="../../assets/imgs/home/list-bg-4.png" alt="4">
+            <p>北欧风餐边柜</p>
+            <span><img src="../../assets/imgs/star.png" alt="star"></span>
+          </ion-col>
+          <ion-col col-6>
+          <img src="../../assets/imgs/home/list-bg-5.png" alt="5">
+          <p>北欧木原色</p>
+          <span><img src="../../assets/imgs/star.png" alt="star"></span>
+        </ion-col>
+        <ion-col col-6>
+          <img src="../../assets/imgs/home/list-bg-6.png" alt="6">
+          <p>北欧木原色</p>
+          <span><img src="../../assets/imgs/star.png" alt="star"></span>
+        </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div *ngSwitchCase="1">
+      <ion-slides pager="true" autoplay="1000" loop="true" class="sli">
+        <ion-slide>
+          <img src="../../assets/imgs/furniture/bg.png" alt="banner">
+        </ion-slide>
+        <ion-slide>
+          <img src="../../assets/imgs/furniture/bg.png" alt="banner">
+        </ion-slide>
+        <ion-slide>
+          <img src="../../assets/imgs/furniture/bg.png" alt="banner">
+        </ion-slide>
+      </ion-slides>
+      
+      <ion-row class="tri">
+        <ion-col col-4 col-push-1>
+          <img src="../../assets/imgs/furniture/dis_01.png" alt="客厅">
+          <p>客厅</p>
+        </ion-col>
+        <ion-col col-4 col-push-2>
+          <img src="../../assets/imgs/furniture/dis_02.png" alt="书房">
+          <p>书房</p>
+        </ion-col>
+        <ion-col col-4 col-push-2>
+          <img src="../../assets/imgs/furniture/dis_03.png" alt="门厅" style="height:100px;">
+          <p>门厅</p>
+        </ion-col>
+      </ion-row>
+      
+      <div class="subtitle">
+        <h3 text-center>桔|子|家|居</h3>
+        <p text-center>Orange Household</p>
+      </div>
+      
+      <ion-grid class="goods gird">
+        <ion-row>
+          <ion-col col-6>
+            <img src="../../assets/imgs/furniture/list-bg-1.png" alt="1">
+            <p>欧式全实木花机 - RMB 600</p>
+            <span><img src="../../assets/imgs/star.png" alt="star"></span>
+          </ion-col>
+          <ion-col col-6>
+            <img src="../../assets/imgs/furniture/list-bg-2.png" alt="2">
+            <p>现代简约早餐桌 - RMB 450</p>
+            <span><img src="../../assets/imgs/star.png" alt="star"></span>
+          </ion-col>
+          <ion-col col-6>
+            <img src="../../assets/imgs/furniture/list-bg-3.png" alt="3">
+            <p>北欧白橡木书架</p>
+            <span><img src="../../assets/imgs/star.png" alt="star"></span>
+          </ion-col>
+          <ion-col col-6>
+            <img src="../../assets/imgs/furniture/list-bg-4.png" alt="4">
+            <p>北欧风餐边柜</p>
+            <span><img src="../../assets/imgs/star.png" alt="star"></span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <!-- <recommendation *ngSwitchCase="0"></recommendation>
+    <furniture *ngSwitchCase="1"></furniture> -->
+  </div>
   
 </ion-content>

@@ -28,7 +28,10 @@ import { BPage } from '../pages/b/b';
   imports: [
     BrowserModule,
     ComponentsModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp ,{
+      backButtonText:'',
+      tabsHideOnSubPages:true
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [

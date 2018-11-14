@@ -1,3 +1,79 @@
 page-about {
 
+    ion-content {
+        ion-input {
+            margin: 10px auto;
+            background-color: #ededed;
+            border-radius: 10px;
+            height: 32px;
+            width: 90%;
+            line-height: 10px;
+            font-size: 10px;
+            text-align: center;
+        }
+        .navlist{
+            padding-left: 0px;
+            margin: 1px;
+            display: flex;
+            justify-content: row;
+            line-height: 44px;
+            .first{
+                background-color: #ffdb2c;
+            }
+                
+            li{
+                width: 25%;
+                text-align: center;
+                height: 44px;
+                background-color: #fff;
+                transition: background-color 0.2s ease-in-out;
+            }
+        }
+        .compon {
+            margin-top: 2px;
+        }
+        .bread {
+            height: 26px;
+            p {
+                // width: 60%;
+                // float: left;
+                // margin: 0;
+                text-align: center;
+            }
+            a {
+                position: relative;
+                left: 90%;
+                top: -30px;
+                color: #998f8f;
+                text-decoration: none;
+            }
+        }
+        .goods{
+            
+            ion-col{
+
+                position: relative;
+
+                img{
+                    width: 100%;
+                }
+                p{
+                    position: absolute;
+                    width: 94%;
+                    bottom: -4px;
+                    color: #fff;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    background-color: rgba(0,0,0,0.5);
+                }
+            }
+        }
+        .check {
+            text-decoration: none;
+            color: #998f8f;
+            float: right;
+            margin-right: 10px;
+        }
+    }
 }

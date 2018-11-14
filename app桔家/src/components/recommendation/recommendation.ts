@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 /**
  * Generated class for the RecommendationComponent component.
  *
@@ -17,5 +18,4 @@ export class RecommendationComponent {
     console.log('Hello RecommendationComponent Component');
     this.text = 'Hello World';
   }
-
 }

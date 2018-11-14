@@ -1,3 +1,22 @@
 furniture {
-
+    
+    
+    .tri {
+        ion-col {
+            height: 100px;
+            width: 100px;
+            overflow: hidden;
+            img {
+                filter: grayscale(60%);
+            }
+            p {
+                position: absolute;
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold;
+                top: 15%;
+                left: 25%;
+            }
+        }
+    }
 }

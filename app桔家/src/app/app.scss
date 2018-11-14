@@ -27,3 +27,15 @@
 ul,li{
     list-style: none;
 }
+.tabs-ios .tab-button:hover:not(.disable-hover), .tabs-ios .tab-button[aria-selected=true]{
+    color:#ffdb2c !important;
+}
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon{
+    color:#ffdb2c !important;
+}
+.tabs-md .tab-button:hover:not(.disable-hover), .tabs-ios .tab-button[aria-selected=true]{
+    color:#ffdb2c !important;
+}
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon{
+    color:#ffdb2c !important;
+}

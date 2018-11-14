@@ -1,21 +1,95 @@
 page-home {
     .navlist{
         padding-left: 0px;
-        margin: 0;
+        margin: 1px;
         display: flex;
         justify-content: row;
         line-height: 44px;
-        .active{
-            border-bottom: 2px solid #ffdb2c;
+        .first{
+            border-bottom-color: #ffdb2c;
         }
             
         li{
             width: 25%;
             text-align: center;
             height: 44px;
+            border-bottom: 3px solid transparent;
+            transition: border-bottom-color 0.2s ease-in-out;
         }
     }
-    
+    .sli{
+        height:200px;
+        img{
+            width: 100%;
+        }
+    }
+    .subtitle{
+        letter-spacing: 5px;
+        h4 {
+            margin-bottom: 0;
+        }
+        p{
+            margin-top: 0;
+        }
+    }
+    .compon {
+        margin-top: 2px;
+    }
+    .goods{
+        img{
+            width: 100%;
+            filter: grayscale(30%);
+        }
+        ion-col{
+            position: relative;
+            p{
+                position: absolute;
+                width: 94%;
+                bottom: -4px;
+                color: #fff;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                background-color: rgba(0,0,0,0.5);
+            }
+            span {
+                position: absolute;
+                left: 65%;
+                top: 40%;
+                img {
+                    transform: scale(0.5);
+                }
+            }
+        }
+    }
+    .tri {
+        ion-col {
+            height: 100px;
+            width: 100px;
+            overflow: hidden;
+            img {
+                filter: grayscale(60%);
+            }
+            p {
+                position: absolute;
+                color: #000;
+                font-size: 18px;
+                font-weight: bold;
+                top: 25%;
+                left: 40%;
+            }
+        }
+    }
+    ion-scroll{
+        height: 30px;
+        margin-bottom: 30rpx;
+        white-space: nowrap;
+        span{
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+        }
+    }
     
     ion-navbar {
         ion-title img {

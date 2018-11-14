@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { IonicModule } from 'ionic-angular';
 import { FurnitureComponent } from './furniture/furniture';
 import { RecommendationComponent } from './recommendation/recommendation';
 @NgModule({

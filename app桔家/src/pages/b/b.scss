@@ -1,3 +1,88 @@
 page-b {
-
+    ion-content {
+        .head {
+            height: 200px;
+            width: 100%;
+            background-image: url(../../assets/imgs/person/bg.png);
+            background-size: cover;
+            .photo {
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+                border-radius: 50%;
+                background-color: #000;
+                position: relative;
+                left: 35%;
+                top: 25%;
+                img {
+                    width: 100%;
+                }
+            }
+            p {
+                font-size: 1.4em;
+                position: relative;
+                left: -1%;
+                top: 20%;
+                text-align: center;
+            }
+        }
+        .dingdan {
+            height: 47px;
+            background-color:#eeeeee;
+            p {
+                display: block;
+                float: left;
+                margin-left: 5%;
+            }
+            a {
+                float: right;
+                margin-right: 10%;
+                margin: 14px;
+                text-decoration: none;
+                color: #a59d9d;
+            }
+        }
+        .tri {
+            background-color:#eeeeee;
+            height: 90px;
+            ion-col{
+                background-color: #fff;
+                margin: 1px;
+                ion-icon {
+                    position: relative;
+                    font-size: 30px;
+                    color: #7a6c6c;
+                    left: 40%;
+                    top: 20px;
+                }
+                p {
+                    position: relative;
+                    top: 10px;
+                    text-align: center;
+                }
+            }
+        }
+        .list {
+            ion-row {
+                background-color: #eee;
+                ion-col {
+                    background-color: #fff;
+                    margin:3px;
+                    height: 100px;
+                    ion-icon {
+                        position: relative;
+                        font-size: 30px;
+                        color: #7a6c6c;
+                        left: 45%;
+                        top: 30px;
+                    }
+                    p {
+                        position: relative;
+                        top: 15px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,11 +1,43 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
+<ion-content>
+  <ion-input placeholder="双12特惠好物超低价"></ion-input>
+  <img src="../../assets/imgs/market/bg.png" alt="banner">
+  <ul class="navlist">
+    <li *ngFor="let item of arr;let idx = index;" (click)="isClick(idx)" [class.first]="isActive==idx">{{item}}</li>
+  </ul>
 
+  <div [ngSwitch]="isActive" class="compon">
+    <div *ngSwitchCase="0">
+      <!-- <ion-row class="bread">
+        <ion-col col-md-2 col-md-push-8>
+          <p>沙发--</p>
+        </ion-col>
+        <ion-col col-md-1 col-md-push-1>
+        </ion-col>
+      </ion-row> -->
+      <div class="bread">
+        <p>沙发</p>
+        <a href="#"><ion-icon name="funnel"></ion-icon></a>
+      </div>
+      <ion-grid class="goods gird">
+        <ion-row>
+          <ion-col col-md-5 col-md-push-1>
+            <img src="../../assets/imgs/market/list-bg-1.png" alt="s1">
+          </ion-col>
+          <ion-col col-md-5 col-md-push-1>
+            <img src="../../assets/imgs/market/list-bg-2.png" alt="s2">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-md-5 col-md-push-1>
+            <img src="../../assets/imgs/market/list-bg-3.png" alt="s3">
+          </ion-col>
+          <ion-col col-md-5 col-md-push-1>
+            <img src="../../assets/imgs/market/list-bg-4.png" alt="s4">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <a href="#" class="check">查看全部商品>></a>
+    </div>
+  </div>
 </ion-content>
